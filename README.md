@@ -26,6 +26,8 @@ npm start
 |src/components/XXX.scss|组件外观的描述|
 |src/components/XXX.html|组件的DOM结构|
 |src/views/|页面 一个文件夹为一个页面（基本结构同上）|
+|public|js生成到这里|
+|views|html生成到这里|
 
 ### 想说点啥。。。
 使用了 css modules 和 sass，但是因为 css modules 无法直接使用sass，所以在调用webpack之前，用gulp编译了一下 sass 并存储在sass文件的同级目录、相同名称、不同后缀，所以在（组件、页面）中的js里可以直接使用 `require(XXX.css)` 而不需要引用 scss|sass
