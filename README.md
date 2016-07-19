@@ -2,6 +2,7 @@
 一个简单的vue套路
 
 ```
+npm i
 gulp
 gulp watch
 npm start
